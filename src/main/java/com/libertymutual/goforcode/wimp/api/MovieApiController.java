@@ -35,6 +35,7 @@ public class MovieApiController {
 		this.actorRepo = actorRepo;
 		
 		movieRepo.save(new Movie("Talladega Nights: The Ballad of Ricky Bobby", new Date(Date.parse("08/04/2006")), 42500000l, "Columbia Pictures"));
+		movieRepo.save(new Movie("Old School", new Date(Date.parse("08/04/2006")), 42500000l, "Columbia Pictures"));
 	}
 	
 	@ApiOperation(value="${api.movie.associateActor}",
